@@ -1,0 +1,7 @@
+FROM java:8
+ENV DIR CalculatorService
+ENV WAR CalculatorService.war
+RUN mkdir ${DIR}
+WORKDIR ${DIR}
+ENTRYPOINT java -jar ${WAR}
+
